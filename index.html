@@ -36,6 +36,14 @@
             color: rgb(50, 100, 0);
         }
 
+        p.novas {
+            font-size: 24pt;
+            text-align: center;
+            font-family: Courier, monospace;
+        } .novas a {
+            color: rgb(100, 65, 0);
+        }
+
         p.donate {
             font-size: 12pt;
             text-align: center;
@@ -71,8 +79,9 @@
 <body id="falsehood">
     <button id="choice" class="truth" onclick="lie()">If you have become jaded</button>
     <p id="not" class="dawns"><a href="music.html">Dawns I Have Beheld</a></p>
-    <p id="nor" class="moons"><a href="writing.html">They To Whom I Join</a></p> 
+    <p id="nor" class="moons"><a href="writing.html">They To Whom I Join</a></p>
     <p id="no" class="stars"><a href="puzzles.html">Knots Tied of Amber</a></p>
+    <!--<p id="naught" class="novas"><a href="choices/choice_1.html">A Jest Most Grand</a></p>-->
     <p id="none" class="donate"><a href="donate.html">Donate</a></p>
 
     <script>
@@ -81,6 +90,7 @@
             document.getElementById("not").innerHTML = '<a href="music.html">Music</a>';
             document.getElementById("nor").innerHTML = '<a href="writing.html">Writing</a>';
             document.getElementById("no").innerHTML = '<a href="puzzles.html">Puzzles</a>';
+            <!--document.getElementById("naught").innerHTML = '<a href="choices/choice_1.html">Choices</a>';-->
             document.getElementById("none").innerHTML = '<a href="https://www.timeanddate.com/calendar/?year=1738&country=234">No, Date</a>';
         }
 
@@ -89,6 +99,7 @@
             document.getElementById("not").innerHTML = "<a href='music.html'>Dawns I Have Beheld</a>";
             document.getElementById("nor").innerHTML = '<a href="writing.html">They To Whom I Join</a>';
             document.getElementById("no").innerHTML = '<a href="puzzles.html">Knots Tied of Amber</a>';
+            <!--document.getElementById("naught").innerHTML = '<a href="choices/choice_1.html">A Jest Most Grand</a>';-->
             document.getElementById("none").innerHTML = '<a href="donate.html">Donate</a>';
         }
     </script>
